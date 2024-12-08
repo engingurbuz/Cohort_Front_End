@@ -1,0 +1,44 @@
+/* Sabit navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 54px;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sağ ve sol paneller */
+.stickysidebar {
+    position: sticky;
+    top: 70px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Post Stili */
+.post img {
+    border-radius: 10px;
+}
+
+/* Arama kısmı */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+/* İkonlar için ayar */
+.icon-margin {
+    margin-right: 15px;
+}
+
+/* Genel margin ayarları */
+.mt-5 {
+    margin-top: 5rem !important;
+}
