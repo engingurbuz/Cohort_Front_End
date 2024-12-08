@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold text-purple-600">Mamba</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-700 hover:text-purple-600">Link</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600">Link</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600">Link</a>
+                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">Sign up</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col justify-center">
+            <h1 class="text-4xl font-bold text-gray-800">Build it with Mamba</h1>
+            <p class="mt-4 text-gray-600">Modular and versatile. The ultimate design toolkit for savvy technology startups.</p>
+            <form class="mt-8">
+                <div class="flex flex-col space-y-4">
+                    <input type="text" placeholder="Your Name" class="p-4 border border-gray-300 rounded-lg">
+                    <input type="email" placeholder="Email address" class="p-4 border border-gray-300 rounded-lg">
+                    <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">Join the waitlist</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="https://picsum.photos/800/600" alt="Stairs" class="rounded-lg shadow">
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-lg font-semibold text-purple-600">How it works</h2>
+        <h1 class="text-4xl font-bold text-gray-800 mt-2">Building with Mamba is simple</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+            <div class="bg-white p-6 shadow rounded-lg">
+                <h3 class="text-lg font-bold text-purple-600">1</h3>
+                <p class="mt-2 text-gray-600">Nostrum, corrupti blanditiis. Illum, architecto?</p>
+            </div>
+            <div class="bg-white p-6 shadow rounded-lg">
+                <h3 class="text-lg font-bold text-purple-600">2</h3>
+                <p class="mt-2 text-gray-600">Vitae saepe atque neque sunt eius dolor veniam alias debitis?</p>
+            </div>
+            <div class="bg-white p-6 shadow rounded-lg">
+                <h3 class="text-lg font-bold text-purple-600">3</h3>
+                <p class="mt-2 text-gray-600">Expedita temporibus culpa reprehenderit doloribus consectetur odio!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8">
+        <img src="https://picsum.photos/600/400" alt="City View" class="rounded-lg shadow">
+        <div>
+            <blockquote class="text-xl font-semibold text-gray-800">"Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae? Rem unde atque mollitia!"</blockquote>
+            <cite class="mt-4 text-gray-600 block">Leroy Jenkins, CEO of Company Co.</cite>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl font-bold text-gray-800">Our team is here to help you.</h1>
+        <p class="text-purple-600 mt-2">Meet our crew &gt;</p>
+        <img src="https://picsum.photos/1200/400" alt="Team Image" class="rounded-lg shadow mt-8">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-6 bg-gray-800 text-white text-center">
+    <p>&copy; 2024 Mamba</p>
+</footer>
+
+</body>
+</html>
