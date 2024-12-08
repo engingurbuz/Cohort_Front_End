@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Saat ve Karşılama</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting" class="greeting">Merhaba!</h1>
+        <div id="clock" class="clock"></div>
+        <div id="day" class="day"></div>
+    </div>
+
+    <script>
+        // Kullanıcı adını sorma ve karşılama mesajını yazdırma
+        const userName = prompt("Adınızı giriniz:");
+        if (userName) {
+            document.getElementById("greeting").innerText = `Merhaba, ${userName}!`;
+        } else {
+            document.getElementById("greeting").innerText = "Merhaba, Ziyaretçi!";
+        }
+
+        // Saati ve günü göstermek için fonksiyon
+        function updateClock() {
+            const now = new Date();
+            const days = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+            const hours = String(now.getHours()).padStart(2, "0");
+            const minutes = String(now.getMinutes()).padStart(2, "0");
+            const seconds = String(now.getSeconds()).padStart(2, "0");
+            const dayName = days[now.getDay()];
+            document.getElementById("clock").innerText = `${hours}:${minutes}:${seconds}`;
+            document.getElementById("day").innerText = dayName;
+        }
+
+        // Saati her saniye güncelle
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
